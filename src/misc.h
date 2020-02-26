@@ -239,7 +239,7 @@ struct Path
 };
 
 extern void* aligned_malloc(size_t size, size_t align);
-static void aligned_free(void* ptr) { _mm_free(ptr); }
+static void aligned_free(void* ptr) { free(ptr); }
 
 // alignasを指定しているのにnewのときに無視される＆STLのコンテナがメモリ確保するときに無視するので、
 // そのために用いるカスタムアロケーター。

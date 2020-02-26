@@ -3,6 +3,8 @@
 #ifndef _NNUE_COMMON_H_
 #define _NNUE_COMMON_H_
 
+#include <cstdint>
+
 #if defined(EVAL_NNUE)
 
 namespace Eval {
